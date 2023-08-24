@@ -18,6 +18,8 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {AuthComponent} from "./auth/auth.component";
 import {LoadingComponent} from "./shared/loading/loading.component";
 import {AuthIntercept} from "./auth/auth-intercept";
+import {AlertComponent} from "./shared/alert-comp/alert.component";
+import {PlaceholderDirective} from "./shared/placeHolder/placeholder.directive";
 
 @NgModule({
   declarations: [
@@ -29,8 +31,8 @@ import {AuthIntercept} from "./auth/auth-intercept";
     RecipeItemComponent,
     RecipeDetailComponent,
     HeaderComponent,
-    RecipeComponent,
-    DropdownDirective,
+    RecipeComponent,PlaceholderDirective,
+    DropdownDirective,AlertComponent,
     PageNotFoundComponent, AuthComponent, LoadingComponent
   ],
   imports: [BrowserModule, ReactiveFormsModule, FormsModule,
